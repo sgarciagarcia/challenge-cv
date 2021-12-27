@@ -1,2 +1,37 @@
-* {font-family:'Oxygen', Arial, Helvetica, sans-serif}
+* {font-family:'Oxygen', Arial, Helvetica, sans-serif;
+color:white;}
+body {margin:0; padding:0}
 h1, h2 {display:none;}
+.d-none {display:none;}
+/*---Intro--*/
+.introduction {
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    background-color:#0c077a;
+    align-items: center;
+    justify-content: center;
+}
+.introduction-badge {
+    width:150px;
+    height:200px;
+    border:1px solid white;
+}
+.introduction-badge p {
+    font-size:1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.introduction-badge p span {
+    font-size:0.8em;
+    text-transform: initial;
+    font-weight: 300;
+}
+.title {
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    color:transparent;
+    font-size:4em;
+    text-align:center;
+}
