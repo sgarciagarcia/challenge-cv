@@ -9,9 +9,11 @@ h1, h2 {display:none;}
     height: 100vh;
     display:flex;
     flex-direction:column;
-    background-color:#0c077a;
+    background-color:#032768;
     align-items: center;
     justify-content: center;
+    z-index:999;
+    position:relative;
 }
 .intro-badge {
     width:150px;
@@ -80,6 +82,28 @@ button a {
     font-weight:700;
     font-size:1.5em;
 }
+/*---Panel de control--*/
+header {
+    width: 100%;
+    height:100px;
+    display: flex;
+    background-color: #0D8DBD;
+    margin: 10px 0 0;
+    padding: 5px;
+    z-index:999;
+    position:fixed;
+    bottom:0;
+}
+header legend {
+    display:none;
+}
+header picture {
+flex:0.2;
+}
+header picture img {
+    width:70px;
+}
+/*--Animations--*/
 @-webkit-keyframes fadeInOut{
     0%{opacity:0}
     50%{opacity:1}
