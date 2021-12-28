@@ -16,7 +16,7 @@
   
   <title>Sara García García - Graphic designer & frontend developer</title>
 </head>
-<body>
+<body onscroll="reverseScroll()">
   <h1>Sara García García - Graphic designer & frontend developer</h1>
 
   <div id="intro" class="intro animate__animated">
@@ -33,7 +33,7 @@
       <p class="title animate__animated animate__fadeInOut">my</p>
       <p id="journey" class=" title animate__animated animate__fadeInAndExit">journey</p>
       <p class="subtitle animate__animated animate__fadeIn">You can download my CV directly <strong>there...</strong></p>
-      <p class="subtitle-2 animate__animated animate__fadeIn">...or press the button and <strong>start scrolling </strong>to see what happens :)</p>
+      <p class="subtitle-2 animate__animated animate__fadeIn">...or press this button and <strong>start scrolling </strong>to see what happens :)</p>
       <button id="start" class="animate__animated animate__fadeIn" onclick="nextScreen()">Start engines</button>
       <div class="cv">
         <h2>Download CV</h2>
@@ -51,7 +51,6 @@
       </div>
       
       <div class="cv">
-        <h2>Download CV</h2>
         <button ><a>CV</a></button>
       </div>
       <div class="skills">
@@ -72,11 +71,19 @@
   
     </header>
     
-    <main>
-  <h2>Education</h2>
-  <h2>Experience</h2>
+    <main class="main" id="main" >
+     
+      <section class="panel" style="background-color: pink;">
+        <h2>Education</h2>
+        <p>Panel 2</p>
+      </section>
+      <section class="panel">
+        <h2>Experience</h2>
+        <p>Panel 1</p>
+      </section>
   <h2>Portfolio on Behance</h2>
   <h2>Macadamia Studio</h2>
+
 </main>
 </body>
 </html>
