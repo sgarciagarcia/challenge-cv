@@ -4,6 +4,7 @@ body {margin:0; padding:0}
 h1, h2 {display:none;}
 ul, li {padding:0; list-style-type:none;}
 .d-none {display:none;}
+button {cursor:pointer;}
 /*---Intro--*/
 .intro {
     width:100vw;
@@ -15,6 +16,7 @@ ul, li {padding:0; list-style-type:none;}
     justify-content: center;
     z-index:999;
     position:relative;
+    transition:all 1s ease-in;
 }
 .intro-badge {
     width:150px;
@@ -63,11 +65,12 @@ animation-duration:3s!important;
 .subtitle-2{
     font-size:1.8em;
     text-align:center;
-    animation-delay:11s;
+    animation-delay:10s;
     animation-duration:4s!important;
 }
 .intro-txt button {
-    animation-delay:12s;
+    animation-delay:11s;
+    transition:all 1s ease-in-out;
 }
 button {
     padding:20px;
@@ -76,21 +79,27 @@ button {
     border-radius:5px;
     width: 60%;
     margin: 0 auto;
-}
-button a {
     color:black;
     text-transform: uppercase;
     font-weight:700;
     font-size:1.5em;
 }
+#start {
+    transition:all 3s ease-in-out;
+}
+.intro-txt .cv {
+    align-self: end;
+    position: relative;
+    bottom: -30px;
+}
 /*---Panel de control--*/
 header {
     width: 100%;
-    height:100px;
+    height:120px;
     display: flex;
-    background-color: #0D8DBD;
+    background-color: #043A9A;
     margin: 10px 0 0;
-    z-index:999;
+    z-index:100;
     position:fixed;
     bottom:0;
 }
@@ -127,11 +136,15 @@ header picture img {
 }
 .cv button {
     width:100%;
-    border-radius:100%;
+    border-radius:10px;
+    animation-delay:8s;
+    animation-duration:3s!important;
+    z-index:999;
 }
 .skills ul{
 display:flex;
 flex-wrap:wrap;
+margin: 0;
 }
 .skills ul li {
     border-radius:100%;
@@ -161,7 +174,7 @@ flex-wrap:wrap;
     50%{opacity:1;  transform:translate(0);
     }
     70%{transform:translate(0);}
-    100%{transform:translate(-115%)}
+    100%{transform:translate(-200%)}
 }
 @keyframes fadeInAndExit{
     0%{opacity:0}
@@ -169,8 +182,50 @@ flex-wrap:wrap;
         transform:translate(0);
     }
     70%{transform:translate(0);}
-    100%{transform:translate(-115%)}
+    100%{transform:translate(-200%)}
 }
-.animate__fadeInAndExit{-webkit-animation-name:fadeInAndExit;animation-name:fadeInAndExit;
+.animate__fadeInAndExit{
+    -webkit-animation-name:fadeInAndExit;animation-name:fadeInAndExit;
     animation-duration: 3s;
+}
+
+@keyframes animateStart {
+    0%{
+        opacity:1;
+    }
+    20%{
+        height:0px;
+        width:0px;
+    }
+    50%{
+        transform:none;
+        opacity:1;
+        height:0px;
+        width:0px;
+    }
+    90%{
+        opacity:1;
+    }
+    
+    100%{
+        transform:scale(200);
+        opacity:0;
+    }
+}
+.animate__start{
+    -webkit-animation-name:animateStart;
+    animation-name:animateStart;
+    animation-duration: 3s;
+    animation-delay:0s!important;
+}
+
+@keyframes shrinkUp {
+0% {height:100vh;}
+100%{height:0px;}
+}
+.animate__shrinkUp {
+    -webkit-animation-name:shrinkUp;
+    animation-name:shrinkUp;
+    animation-duration: 0.1s;
+    animation-delay:2s!important;
 }
