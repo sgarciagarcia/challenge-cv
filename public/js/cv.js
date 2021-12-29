@@ -31,6 +31,6 @@ function reverseScroll() {
     console.log(mainBottom - [i])
   }
     
-    
-    
 }
+
+//ESTO ES UNA MIERDA, USAR JQUERY Y EL TRUCO DEL MUCHACHO Y PUNTO
