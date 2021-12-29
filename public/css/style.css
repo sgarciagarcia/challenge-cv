@@ -15,8 +15,9 @@ button {cursor:pointer;}
     align-items: center;
     justify-content: center;
     z-index:999;
-    position:relative;
+    position:fixed;
     transition:all 1s ease-in;
+    overflow:hidden;
 }
 .intro-badge {
     width:150px;
@@ -162,11 +163,10 @@ margin: 0;
     display: none;
     background-color: #032768;
     position: fixed;
-    --bottom: 0;
     bottom:0px;
     left: 0;
     width: 100%;
-    /*z-index: 99990;*/
+
 }
 .main-scroll {
     bottom: calc (var(--bottom) - 1)px;
@@ -180,6 +180,14 @@ margin: 0;
   font-size: 30px;
   line-height: 35px;
   text-transform: uppercase;
+}
+/*---Cohete---*/
+.cohete {
+    position: fixed;
+    width: 30px;
+    height: 60px;
+    bottom: 120px;
+    left: calc((100vw - 15px) /2);
 }
 /*--Animations--*/
 @-webkit-keyframes fadeInOut{
