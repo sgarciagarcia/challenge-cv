@@ -17,20 +17,6 @@ function nextScreen (){ //Transiciones y animaciones al pulsar Start
 //Función para el reverse scroll 
 //Inside onScroll function of window, increase the bottom value but in negative
 
-
-function reverseScroll() {
-   
-  for (let i = 1; i<30; i++){
-    let main = document.getElementById("main");
-    let mainStyle = window.getComputedStyle(main);
-    let mainBottom = mainStyle.getPropertyValue('bottom');
-    let numero = Number(mainBottom.slice(0,-2));
-    let finalBottom = numero - [i];
-    let stringBottom = finalBottom.toString();
-    main.style.bottom = stringBottom + "px";
-    console.log(mainBottom - [i])
-  }
-    
-    
-    
-}
+$(window).on("scroll", function () {
+  $(".main").css("bottom", $(window).scrollTop() * -1);
+});
