@@ -1,6 +1,11 @@
 * {font-family:'Oxygen', Arial, Helvetica, sans-serif;
 color:white;}
-body {margin:0; padding:0; height:200vh;}
+body {
+    margin:0; 
+    padding:0; 
+    height:200vh;
+    overflow-x: hidden;
+}
 h1, h2 {display:none;}
 ul, li {padding:0; list-style-type:none;}
 .d-none {display:none;}
@@ -15,7 +20,7 @@ button {cursor:pointer;}
     align-items: center;
     justify-content: center;
     z-index:999;
-    position:relative;
+    position:fixed;
     transition:all 1s ease-in;
 }
 .intro-badge {
