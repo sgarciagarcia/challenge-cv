@@ -3,7 +3,6 @@ color:white;}
 body {
     margin:0; 
     padding:0; 
-    height:200vh;
     overflow-x: hidden;
 }
 h1, h2 {display:none;}
@@ -167,31 +166,22 @@ margin: 0;
 .main {
     display: none;
     background-color: #032768;
-    position: fixed;
-    bottom:0px;
-    left: 0;
-    width: 100%;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-}
-.main-scroll {
-    bottom: calc (var(--bottom) - 1)px;
-}
-.parallax {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-perspective: 300px;
     perspective: 300px;  
-  }
+}
+.main-scroll {
+    bottom: calc (var(--bottom) - 1)px;
+}
 
-  .parallax__group {
+.parallax__group {
     position: relative;
     height: 100vh;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
-
   
 
   .parallax__layer--fore {
@@ -224,7 +214,6 @@ margin: 0;
     position: fixed;
     width: 30px;
     height: 60px;
-    bottom: 120px;
     left: calc((100vw - 15px) /2);
     z-index:100;
 }

@@ -14,11 +14,4 @@ function nextScreen (){ //Transiciones y animaciones al pulsar Start
 }
 
 
-//Función para el reverse scroll 
-//Inside onScroll function of window, increase the bottom value but in negative
-
-$(window).on("scroll", function () {
-  $(".main").css("bottom", $(window).scrollTop() * -1);
-
-});
 

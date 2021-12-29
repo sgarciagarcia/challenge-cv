@@ -13,8 +13,7 @@
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  
-
+  
   <script src="js/cv.js"></script> 
   <title>Sara García García - Graphic designer & frontend developer</title>
 </head>
@@ -81,21 +80,26 @@
     
     <main class="main" id="main" >
      
-      <section class="panel" style="background-color: pink;">
+      <section class="parallax__group" >
         <h2>Experience</h2>
         <p>Panel 2</p>
-        <div class="parallax-base">
-          <img style="background-color:blue;width:50px;height:50px;border-radius:100%;position: absolute;top: -250px;">
+        <div class="parallax__layer--base">
+          <img style="background-color:blue;width:50px;height:50px;border-radius:100%;">
+      </div>
+      <div class="parallax__group">
+        <div class="parallax__layer--base">
+          <img style="background-color:pink;width:50px;height:50px;border-radius:100%;">
+      </div>
       </div>
       </section>
-      <section class="panel">
+      <section class="parallax__group">
         <h2>Education</h2>
         <p>Panel 1</p>
-    <div class="parallax-base">
-    <img style="background-color:turquoise;width:50px;height:50px;border-radius:100%;position: absolute;top: -250px;">
+    <div class="parallax__layer--back">
+    <img style="background-color:turquoise;width:50px;height:50px;border-radius:100%;">
 </div>
-<div class="parallax-base">
-    <img style="background-color:orange;width:50px;height:50px;border-radius:100%;position: absolute;top: -10px;right: 30px;">
+<div class="parallax__layer--fast">
+    <img style="background-color:orange;width:50px;height:50px;border-radius:100%;">
 </div>
     
       </section>
