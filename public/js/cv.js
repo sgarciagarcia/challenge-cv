@@ -19,4 +19,6 @@ function nextScreen (){ //Transiciones y animaciones al pulsar Start
 
 $(window).on("scroll", function () {
   $(".main").css("bottom", $(window).scrollTop() * -1);
+
 });
+
