@@ -10,6 +10,17 @@ function nextScreen (){ //Transiciones y animaciones al pulsar Start
     intro.addEventListener("animationend", function() {
         intro.style.display="none";
         document.getElementById("main").style.display="block";
+        document.getElementById("3").style.display="block";
+        document.getElementById("2").style.display="block";
+        document.getElementById("1").style.display="block";
+        document.getElementById("0").style.display="block";
+    });
+    let cero = document.getElementById("0");
+    cero.addEventListener("animationend", function() {
+      document.getElementById("3").style.display="none";
+      document.getElementById("2").style.display="none";
+      document.getElementById("1").style.display="none";
+      document.getElementById("0").style.display="none";
     });
 }
 

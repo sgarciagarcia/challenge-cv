@@ -210,7 +210,29 @@ margin: 0;
     z-index: 2;
   }
 
-
+/*---Countdown--*/
+.countdown {
+    z-index: 101;
+    position: fixed;
+    left: calc((100vw /2) - 14px);
+    top: 10vh;
+    font-size: 5em;
+}
+.countdown__num {
+    display:none;
+}
+.countdown__num:nth-child(1){
+    animation-delay:1s!important;
+}
+.countdown__num:nth-child(2){
+    animation-delay:2s!important;
+}
+.countdown__num:nth-child(3){
+    animation-delay:3s!important;
+}
+.countdown__num:nth-child(4){
+    animation-delay:4s!important;
+}
 /*---Cohete---*/
 .rocket {
     position: fixed;
@@ -240,12 +262,12 @@ margin: 0;
 /*---Posición planetas---*/
 .planet--1 {
 position:absolute;
-top:90%;
+top:110%;
 right:10%;
 }
 .planet--2 {
     position:absolute;
-    top:120%;
+    top:150%;
     left:60%;
 }
 .planet--3{
@@ -276,7 +298,8 @@ right:10%;
 @-webkit-keyframes fadeInOut{
     0%{opacity:0}
     50%{opacity:1}
-    100%{opacity:0}
+    100%{opacity:0;
+    }
 }
 @keyframes fadeInOut{
     0%{opacity:0; }
