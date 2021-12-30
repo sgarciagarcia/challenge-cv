@@ -221,13 +221,13 @@ margin: 0;
     z-index:100;
 }
 /*--Tamaño planetas---*/
-.planet--m {
+.planet--s {
     width:100px;
     height:100px;
 }
-.planet--s {
-    width:50px;
-    height:50px;
+.planet--m {
+    width:200px;
+    height:200px;
 }
 .planet--xs {
     width:20px;
@@ -240,18 +240,18 @@ margin: 0;
 /*---Posición planetas---*/
 .planet--1 {
 position:absolute;
-top:80%;
-left:20%;
+top:90%;
+right:10%;
 }
 .planet--2 {
     position:absolute;
-    top:15%;
+    top:120%;
     left:60%;
 }
 .planet--3{
     position:absolute;
     top:0;
-    left:10%;
+    left:5%;
 }
 /*--Hovr planetas--*/
 .planet {
@@ -261,11 +261,8 @@ left:20%;
 }
 .planet-info {
     transform: translate(15px, -4px);
-    opacity:0.3;
 }
-.planet-info:hover, .planet-info:focus{
-    opacity:1;
-}
+
 .planet-info__txt{
     font-size:0.8em;
     color:white;
