@@ -182,27 +182,29 @@ margin: 0;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
-  .parallax__layer--base {
+.parallax__layer {
+    height:100vh;
+    position:relative;
+}
+  .parallax__layer--normal {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     z-index: 4;
   }
 
-  .parallax__layer--fore {
+  .parallax__layer--fast {
     -webkit-transform: translateZ(90px) scale(.7);
     transform: translateZ(90px) scale(.7);
     z-index: 1;
   }
 
- 
-
-  .parallax__layer--back {
+  .parallax__layer--slow {
     -webkit-transform: translateZ(-300px) scale(2);
     transform: translateZ(-300px) scale(2);
     z-index: 3;
   }
 
-  .parallax__layer--deep {
+  .parallax__layer--slower {
     -webkit-transform: translateZ(-600px) scale(3);
     transform: translateZ(-600px) scale(3);
     z-index: 2;
@@ -210,13 +212,46 @@ margin: 0;
 
 
 /*---Cohete---*/
-.cohete {
+.rocket {
     position: fixed;
     width: 30px;
     height: 60px;
     left: calc((100vw - 15px) /2);
     top: calc((100vh - 160px) / 2);
     z-index:100;
+}
+/*--Tamaño planetas---*/
+.planet--m {
+    width:100px;
+    height:100px;
+}
+.planet--s {
+    width:50px;
+    height:50px;
+}
+.planet--xs {
+    width:20px;
+    height:20px;
+}
+.planet--l {
+    width:300px;
+    height:300px;
+}
+/*---Posición planetas---*/
+.planet1 {
+position:absolute;
+top:80%;
+left:20%;
+}
+.planet2 {
+    position:absolute;
+    top:15%;
+    left:60%;
+}
+.planet3{
+    position:absolute;
+    top:0;
+    left:10%;
 }
 /*--Animations--*/
 @-webkit-keyframes fadeInOut{
