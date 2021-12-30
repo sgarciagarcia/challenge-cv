@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
 }
 h1, h2 {display:none;}
+p {text-align:center;}
 ul, li {padding:0; list-style-type:none;}
 .d-none {display:none;}
 button {cursor:pointer;}
@@ -64,17 +65,17 @@ button {cursor:pointer;}
     font-size:1.8em;
     text-align:center;
     animation-delay:7s;
-animation-duration:3s!important;
+animation-duration:2s!important;
 }
 
 .subtitle-2{
     font-size:1.8em;
     text-align:center;
-    animation-delay:10s;
-    animation-duration:4s!important;
+    animation-delay:9s;
+    animation-duration:2s!important;
 }
 .intro-txt button {
-    animation-delay:11s;
+    animation-delay:10s;
     transition:all 1s ease-in-out;
 }
 button {
@@ -181,7 +182,29 @@ margin: 0;
     height: 100vh;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    margin-top:10vh;
   }
+.parallax__group:nth-child(2){
+    margin-top:100vh;
+}
+.section-title {
+    display: block;
+    position: absolute;
+    font-size: 3em;
+    text-transform: uppercase;
+    animation-delay: 3s!important;
+    left: calc(50vw - 2.5em);
+
+}
+#education {
+    top:55%;
+}
+#portfolio {
+   left:242px;
+    margin:0;
+    text-align: center;
+}
+
 .parallax__layer {
     height:100vh;
     position:relative;
@@ -214,24 +237,29 @@ margin: 0;
 .countdown {
     z-index: 101;
     position: fixed;
-    left: calc((100vw /2) - 14px);
+    left: calc(50vw - 14px);
     top: 10vh;
     font-size: 5em;
 }
 .countdown__num {
     display:none;
+    position: absolute;
+    top: 0;
+    animation-duration:0.6s!important;
 }
 .countdown__num:nth-child(1){
-    animation-delay:1s!important;
+    animation-delay:0.6s!important;
 }
 .countdown__num:nth-child(2){
-    animation-delay:2s!important;
+    animation-delay:1.1s!important;
 }
 .countdown__num:nth-child(3){
-    animation-delay:3s!important;
+    animation-delay:1.6s!important;
 }
 .countdown__num:nth-child(4){
-    animation-delay:4s!important;
+    animation-delay:2s!important;
+    animation-duration:1s!important;
+    left:-1em;
 }
 /*---Cohete---*/
 .rocket {
@@ -252,12 +280,16 @@ margin: 0;
     height:200px;
 }
 .planet--xs {
-    width:20px;
-    height:20px;
+    width:30px;
+    height:30px;
 }
 .planet--l {
     width:300px;
     height:300px;
+}
+.planet--xl {
+    width:800px;
+    height:800px;
 }
 /*---Posición planetas---*/
 .planet--1 {
@@ -272,10 +304,44 @@ right:10%;
 }
 .planet--3{
     position:absolute;
-    top:0;
+    top:20%;
     left:5%;
 }
-/*--Hovr planetas--*/
+.planet--4{
+    position:absolute;
+    left:33%;
+}
+  
+.planet--5 {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+}
+.planet--6 {
+    position: absolute;
+    left: 50%;
+    top:-20%;
+}
+.planet--7 {
+    position: absolute;
+    top: -15%;
+    left:15%;
+}
+.planet--8 {
+    position: absolute;
+    left:20%;
+    top:-50%;
+}
+.planet--9 {
+    position: absolute;
+    left:50%;
+}
+.planet--10 {
+    position: absolute;
+    left:calc(50vw - 400px);
+    bottom:-150%;
+}
+/*--Info planetas--*/
 .planet {
     display:flex;
     flex-direction: column;
