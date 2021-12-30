@@ -182,7 +182,11 @@ margin: 0;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
-  
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
 
   .parallax__layer--fore {
     -webkit-transform: translateZ(90px) scale(.7);
@@ -190,11 +194,7 @@ margin: 0;
     z-index: 1;
   }
 
-  .parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    z-index: 4;
-  }
+ 
 
   .parallax__layer--back {
     -webkit-transform: translateZ(-300px) scale(2);
@@ -215,6 +215,7 @@ margin: 0;
     width: 30px;
     height: 60px;
     left: calc((100vw - 15px) /2);
+    top: calc((100vh - 160px) / 2);
     z-index:100;
 }
 /*--Animations--*/
