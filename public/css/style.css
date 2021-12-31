@@ -40,10 +40,10 @@ button {cursor:pointer;}
     text-transform: uppercase;
     -webkit-text-stroke: 1px white;
     color:transparent;
-    font-size:4em;
-    text-align:center;
+    font-size: 6em;
+    text-align: center;
     position: absolute;
-    left: 10%;
+    width: 100%;
 }
 .title:nth-child(1){
     animation-duration:3s!important;
@@ -211,7 +211,7 @@ margin: 0;
     text-align: center;
 }
 #portfolio p {
-    letter-spacing: 3px;
+    letter-spacing: 8px;
     text-transform:uppercase;
 }
 .parallax__layer {
