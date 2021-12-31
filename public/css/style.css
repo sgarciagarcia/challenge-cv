@@ -190,11 +190,14 @@ margin: 0;
 .section-title {
     display: block;
     position: absolute;
-    font-size: 3em;
+    font-size: 5em;
     text-transform: uppercase;
     animation-delay: 3s!important;
-    left: calc(50vw - 2.5em);
-
+    left: calc(50vw - 2.9em);
+    background: -webkit-linear-gradient(white ,transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top:0;
 }
 #education {
     top:55%;
@@ -202,12 +205,15 @@ margin: 0;
 #experience {
     margin-top:100vh
 }
-#portfolio {
-   left:242px;
+#portfolio h2 {
+    left: calc(50vw - 1.5em);
     margin:0;
     text-align: center;
 }
-
+#portfolio p {
+    letter-spacing: 3px;
+    text-transform:uppercase;
+}
 .parallax__layer {
     height:100vh;
     position:relative;
