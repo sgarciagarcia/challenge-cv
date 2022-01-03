@@ -1,10 +1,21 @@
 * {font-family:'Oxygen', Arial, Helvetica, sans-serif;
 color:white;}
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 body {
     margin:0; 
     padding:0; 
     overflow-x: hidden;
 }
+
 h1, h2 {display:none;}
 p {text-align:center;}
 ul, li {padding:0; list-style-type:none;}
@@ -144,7 +155,6 @@ header picture img {
 }
 .cv {
     display: flex;
-    flex: 0.3;
     order: 3;
     align-self: center;
     margin-right:2%;
@@ -303,9 +313,8 @@ margin: 0;
     width:30px;
     height:30px;
 }
-.planet--l {
-    width:300px;
-    height:300px;
+.planet--l .planet-info img {
+    width:400px;
 }
 .planet--xl {
     width:800px;
@@ -361,27 +370,38 @@ right:10%;
     left:calc(50vw - 400px);
     bottom:-150%;
 }
-/*--Info planetas--*/
+/*--Info planetas - reveal on scroll--*/
 .planet {
     display:flex;
-    flex-direction: column;
     justify-content:center;
 }
-.planet-info {
-    transform: translate(15px, -4px);
-}
 
-.planet-info__txt{
-    font-size:0.8em;
-    color:white;
-    text-align:center;
-    margin:5px 0;
-}
-.planet-info__txt--s{
-    font-size:0.6em;
-}
+.planet-info__txt {
+display:none;}
 
-/*Starts Background--*/
+.planet-place {
+    display: flex;
+}
+.planet-place svg {
+    width: 50px;
+    height: 50px;
+}
+.planet-place p {
+    text-align: left;
+    margin: 0 20px;
+}
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+.reveal.active {
+    opacity: 1;
+  }
+.active.fadeInUp {
+    animation: fadeInUp 1s ease-in;
+  }
+
+/*Stars Background--*/
 #stars {
       content:"•";
     background: transparent;
@@ -504,7 +524,7 @@ right:10%;
 .animate__shrinkUp {
     -webkit-animation-name:shrinkUp;
     animation-name:shrinkUp;
-    animation-duration: 0.1s;
+    animation-duration: 0.05s;
     animation-delay:2s!important;
 }
 @keyframes animStar {

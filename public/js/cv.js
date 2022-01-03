@@ -2,12 +2,14 @@
 function nextScreen (){ //Transiciones y animaciones al pulsar Start
     let start = document.getElementById("start");
     let intro = document.getElementById("intro");
+    let subtitle = document.getElementsByClassName("subtitle");
     start.classList.remove("animate__animated");
     start.classList.remove("animate__fadeIn");
     start.innerHTML="";
     start.classList.add("animate__start"); //Se modifican los estilos del botón para la transición
+    document.getElementById("welcome-cv").style.display="none";
     intro.classList.add("animate__shrinkUp"); //se encoge la pantalla de bienvenida y desaparece
-    intro.addEventListener("animationend", function() {
+    intro.addEventListener("animationend", function() { //al terminar la animacion de transicion
         intro.style.display="none";
         document.getElementById("main").style.display="block";
         document.getElementById("3").style.display="block";
