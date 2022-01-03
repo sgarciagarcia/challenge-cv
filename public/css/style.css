@@ -15,7 +15,7 @@ body {
     padding:0; 
     overflow-x: hidden;
 }
-
+a {text-decoration: none;}
 h1, h2 {display:none;}
 p {text-align:center;}
 ul, li {padding:0; list-style-type:none;}
@@ -227,7 +227,7 @@ margin: 0;
     margin-top:200vh
 }
 #portfolio h2 {
-    left: calc(50vw - 1.5em);
+    left: calc(50vw - 6em);
     margin:0;
     text-align: center;
 }
@@ -305,9 +305,8 @@ margin: 0;
 .planet--s .planet-info img {
     width:300px;
 }
-.planet--m {
-    width:200px;
-    height:200px;
+.planet--m .planet-info img {
+    width:350px;
 }
 .planet--xs {
     width:30px;
@@ -329,12 +328,19 @@ right:10%;
 .planet--2 {
     position:absolute;
     top:250%;
-    left:60%;
+    left:20%;
 }
 .planet--3{
     position:absolute;
     top:20%;
     left:5%;
+}
+.halo {
+    position: absolute;
+    top: 52%;
+    width: 455px!important;
+    left: -60px;
+    transform: rotate(3deg);
 }
 .planet--4{
     position:absolute;
@@ -376,7 +382,8 @@ right:10%;
     justify-content:center;
     flex-direction:column;
 }
-
+.planet-info {
+    position:relative;}
 .planet-info__txt {
 display:none;}
 
