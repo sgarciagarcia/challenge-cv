@@ -27,6 +27,7 @@ function nextScreen (){ //Transiciones y animaciones al pulsar Start
 }
 
 
+/* Reveal on scroll function - keep it jic
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
   for (var i = 0; i < reveals.length; i++) {
@@ -39,5 +40,5 @@ function reveal() {
       reveals[i].classList.remove("animate__fadeInLeft");
     }
   }
-}
+}*/
 

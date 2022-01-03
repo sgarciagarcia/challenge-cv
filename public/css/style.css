@@ -211,7 +211,7 @@ margin: 0;
 .section-title {
     display: block;
     position: absolute;
-    font-size: 5em;
+    font-size: 3.5em;
     text-transform: uppercase;
     animation-delay: 3s!important;
     left: calc(50vw - 2.9em);
@@ -370,10 +370,11 @@ right:10%;
     left:calc(50vw - 400px);
     bottom:-150%;
 }
-/*--Info planetas - reveal on scroll--*/
+/*--Info planetas - reveal on scroll discarded--*/
 .planet {
     display:flex;
     justify-content:center;
+    flex-direction:column;
 }
 
 .planet-info__txt {
@@ -395,14 +396,14 @@ display:none;}
     letter-spacing: 5px;
     font-size: 0.8em;
 }
-.reveal {
+/*.reveal {
     position: relative;
     opacity: 0;
   }
 .reveal.animate__fadeInLeft {
     opacity: 1;
   }
-
+*/
 /*Stars Background--*/
 #stars {
       content:"•";
@@ -556,4 +557,15 @@ display:none;}
     -ms-animation: rotating 5s linear infinite;
     -o-animation: rotating 5s linear infinite;
     animation: rotating 5s linear infinite;
+  }
+
+  @media screen and (min-width:600px){
+    .section-title {
+        font-size:5em;
+    }
+
+    .planet {
+        flex-direction:row;
+    }
+    
   }
