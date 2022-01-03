@@ -224,7 +224,7 @@ margin: 0;
     top:55%;
 }
 #experience {
-    margin-top:100vh
+    margin-top:150vh
 }
 #portfolio h2 {
     left: calc(50vw - 1.5em);
@@ -323,12 +323,12 @@ margin: 0;
 /*---Posición planetas---*/
 .planet--1 {
 position:absolute;
-top:110%;
+top:150%;
 right:10%;
 }
 .planet--2 {
     position:absolute;
-    top:150%;
+    top:180%;
     left:60%;
 }
 .planet--3{
@@ -381,6 +381,7 @@ display:none;}
 
 .planet-place {
     display: flex;
+    align-self:center;
 }
 .planet-place svg {
     width: 50px;
@@ -394,11 +395,8 @@ display:none;}
     position: relative;
     opacity: 0;
   }
-.reveal.active {
+.reveal.animate__fadeInLeft {
     opacity: 1;
-  }
-.active.fadeInUp {
-    animation: fadeInUp 1s ease-in;
   }
 
 /*Stars Background--*/
@@ -534,4 +532,24 @@ display:none;}
     to {
       transform: translateY(-2000px);
     }
+  }
+
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
   }
