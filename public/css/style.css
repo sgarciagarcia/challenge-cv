@@ -224,7 +224,7 @@ margin: 0;
     top:55%;
 }
 #experience {
-    margin-top:150vh
+    margin-top:200vh
 }
 #portfolio h2 {
     left: calc(50vw - 1.5em);
@@ -301,9 +301,9 @@ margin: 0;
     z-index:100;
 }
 /*--Tamaño planetas---*/
-.planet--s {
-    width:100px;
-    height:100px;
+
+.planet--s .planet-info img {
+    width:300px;
 }
 .planet--m {
     width:200px;
@@ -323,12 +323,12 @@ margin: 0;
 /*---Posición planetas---*/
 .planet--1 {
 position:absolute;
-top:150%;
+top:180%;
 right:10%;
 }
 .planet--2 {
     position:absolute;
-    top:180%;
+    top:250%;
     left:60%;
 }
 .planet--3{
@@ -380,22 +380,7 @@ right:10%;
 .planet-info__txt {
 display:none;}
 
-.planet-place {
-    display: flex;
-    align-self:center;
-}
-.planet-place svg {
-    width: 50px;
-    height: 50px;
-}
-.planet-place p {
-    text-align: left;
-    margin: 0 20px;
-    opacity: 1;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 0.8em;
-}
+
 /*.reveal {
     position: relative;
     opacity: 0;
