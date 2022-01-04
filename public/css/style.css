@@ -296,9 +296,19 @@ margin: 0;
     position: fixed;
     width: 30px;
     height: 60px;
-    left: calc((100vw - 15px) /2);
+    left: calc((100vw - 25px) /2);
     top: calc((100vh - 160px) / 2);
     z-index:100;
+}
+.rocket img {
+    width:50px;
+}
+.fire {
+    width: 30px!important;
+    position: relative;
+    left: 10px;
+    top: 18px;
+    animation-delay:4s;
 }
 /*--Tamaño planetas---*/
 
@@ -308,9 +318,9 @@ margin: 0;
 .planet--m .planet-info img {
     width:350px;
 }
-.planet--xs {
-    width:30px;
-    height:30px;
+.planet--xs .planet-info img {
+    width:200px;
+    height:200px;
 }
 .planet--l .planet-info img {
     width:400px;
