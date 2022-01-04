@@ -416,6 +416,9 @@ display:none;}
     top:10px;
     right:20px;
 }
+.contact picture svg{
+    width:35px;
+}
 
 /*Stars Background--*/
 #stars {
