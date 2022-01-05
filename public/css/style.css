@@ -431,7 +431,7 @@ right:10%;
     position: absolute;
     top: -100px;
     transition: all 5s ease-in-out;
-    left: -30px;
+    left: -30vw;
 }
 
 /*--Info planetas - reveal on scroll discarded--*/
@@ -611,13 +611,16 @@ display:none;}
     -o-animation: rotating 5s linear infinite;
     animation: rotating 5s linear infinite;
   }
-@keyframes {
+@keyframes translate {
     from {transform: translate(0,0);}
-    to{transform: translate(150vw, 100vh);
+    to{transform: translate(150vw, 100vh);}
 }
-
+@-webkit-keyframes translate {
+    from {transform: translate(0,0);}
+    to{transform: translate(150vw, 100vh);}
+}
   .translate {
-      animation: translate 5s linear;
+      animation: translate 5s linear infinite;
   }
   /*-----Media queries--*/
 
