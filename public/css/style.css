@@ -356,7 +356,7 @@ right:10%;
 .planet--2 {
     position:absolute;
     top:250%;
-    left:20%;
+    left:5%;
 }
 .planet--3{
     position:absolute;
@@ -377,7 +377,7 @@ right:10%;
   
 .planet--5 {
     position: absolute;
-    top: 25%;
+    top: 40%;
     left: 65%;
 }
 .planet--6 {
@@ -388,12 +388,12 @@ right:10%;
 .planet--7 {
     position: absolute;
     top: -5%;
-    left:15%;
+    left:2%;
 }
 .planet--8 {
     position: absolute;
-    left:20%;
-    top:-50%;
+    left: 2%;
+    top: -30%;
 }
 .planet--9 {
     position: absolute;
