@@ -173,18 +173,24 @@ header picture img {
     animation-delay:5s;
     animation-duration:3s!important;
     z-index:999;
+    border-left: 7px solid #B29413;
+    border-bottom: 6px solid #B29413;
+}
+.cv button img {
+width:30px;
 }
 .skills ul{
-display:flex;
-flex-wrap:wrap;
-margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 7%;
+    justify-content: center;
 }
 .skills ul li {
-    width:30px;
-    margin:5px;
-    text-align:center;
-    margin-right:15px;
-    font-size:0.9em;
+    text-align: center;
+    font-size: 0.9em;
+    width: 30px;
+    max-height: 90px;
 }
 .skills ul li span {
     display:none;
@@ -377,11 +383,11 @@ right:10%;
 .planet--6 {
     position: absolute;
     left: 10%;
-    top:-20%;
+    top:-40%;
 }
 .planet--7 {
     position: absolute;
-    top: -15%;
+    top: -5%;
     left:15%;
 }
 .planet--8 {

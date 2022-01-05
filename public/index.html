@@ -23,12 +23,10 @@
   <h1>Sara García García - Graphic designer & frontend developer</h1>
 
   <div id="intro" class="intro animate__animated">
-<div class="separador-flex"></div>
-    <div class="intro-badge">
-      
-      </p>
-    </div>
-    <div class="intro-txt" >
+  <div class="separador-flex"></div>
+  <div class="intro-badge">
+  </div>
+  <div class="intro-txt" >
       <p class="title animate__animated animate__fadeInOut">Hello</p> 
       <p class="title animate__animated animate__fadeInOut">Welcome</p> 
       <p class="title animate__animated animate__fadeInOut animate--2">to</p>
@@ -43,33 +41,34 @@
 
   <div class="cv" >
     <h2>Download CV</h2>
-    <button id="welcome-cv" class="animate__animated animate__fadeIn"><a>CV</a></button>
+    <button id="welcome-cv" class="animate__animated animate__fadeIn">
+      <a>
+        <img src="svg/download.png"/>CV</a></button>
   </div>
 </div>
   
   
     <header>
       <div class="foto">
-        <picture><img src="svg/photo.jpg"/></picture>
+        <picture><img src="svg/photo.jpg" alt="Sara García profile photo"/></picture>
       <legend>Sara García García</legend>
       <a class="behance" href="https://www.behance.net/saragarciagarcia"><svg class="SVGInline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M1000 500c0 277-223 500-500 500S0 777 0 500 223 0 500 0s500 223 500 500zm-485 80c0-83-66-100-66-100 11-5 52-23 52-87 0-70-52-109-129-109H167v424h191c120 0 157-63 157-128zM354 451h-90v-94h80c47 0 72 9 72 47 1 37-27 47-62 47zm71 123c0 35-15 60-71 60h-90V522h91c47 0 70 18 70 52zm429 0v-20c0-101-53-163-150-163-86 0-152 53-152 163 0 105 64 160 154 160 73 0 131-40 144-99h-81s-15 34-60 34c-41 0-76-25-76-75h221zM613 333h184v-42H613v42zm159 188H634c4-35 27-64 70-64 39 0 68 28 68 64z"></path></svg></a>
       </div>
       
       <div class="cv">
-        <button ><a>CV</a></button>
+        <button ><a> <img src="svg/download.png"/>CV</a></button>
       </div>
       <div class="skills">
         <h2>Skills</h2>
         <ul>
-          <li><img src="svg/ps.svg"/>Ps <span>Photoshop</span></li>
-          <li><img src="svg/ai.svg"/>Ai <span>Illustrator</span></li>
-          <li><img src="svg/id.svg"/>Id <span>InDesign</span></li>
+          <li><img src="svg/ps.svg" alt="High Photoshop skills"/>Ps <span>Photoshop</span></li>
+          <li><img src="svg/ai.svg" alt="Medium Illustrator skills"/>Ai <span>Illustrator</span></li>
+          <li><img src="svg/id.svg" alt="High InDesign skills"/>Id <span>InDesign</span></li>
           <li>&nbsp;</li>
-          <li><img src="svg/html.svg"/>HTML </li>
-          <li><img src="svg/css.svg"/>CSS</li>
-          <li><img src="svg/js.svg"/>JS <span>JavaScript</span></li>
-          <li><span>Spanish</span></li>
-          <li><span>English</span></li>
+          <li><img src="svg/html.svg" alt="High HTML skills"/>HTML </li>
+          <li><img src="svg/css.svg" alt="High CSS skills"/>CSS</li>
+          <li><img src="svg/js.svg" alt="Basic JavaScript skills"/>JS <span>JavaScript</span></li>
+         
         </ul>
       </div>
   
@@ -83,8 +82,8 @@
       <p id="0" class="countdown__num animate__animated animate__fadeInOut">scroll!</p>
   </div>
     <div class="rocket" >
-      <img src="svg/fire.svg" class="fire animate__animated animate__pulse animate__infinite"/>
-      <img src="svg/rocket.svg"/>
+      <img src="svg/fire.svg" alt="fire" class="fire animate__animated animate__pulse animate__infinite"/>
+      <img src="svg/rocket.svg" alt="rocket" />
     </div>
     
     <main class="main" id="main" >
@@ -100,7 +99,7 @@
           <div class="planet planet--1 planet--s" >
 
             <div class="planet-info">
-              <img src="svg/master.svg"/>
+              <img src="svg/master.svg" alt="Planet"/>
               <p class="planet-info__txt">2014-2015</p>
               <p class="planet-info__txt">Master's degree in Graphic & web design</p>
               <p class="planet-info__txt">CEV</p>
@@ -111,11 +110,11 @@
           <div class="planet planet--2 planet--m">
 
             <div class="planet-info">
-              <img class="halo" src="svg/halo.svg"/>
-              <img src="svg/bootcamp.svg"/>
-              <p class="planet-info__txt planet-info__txt--s">2021-2022</p>
+              <img class="halo" src="svg/halo.svg" alt="Planet"/>
+              <img src="svg/bootcamp.svg" alt="Planet"/>
+              <p class="planet-info__txt ">2021-2022</p>
               <p class="planet-info__txt">Frontend developer bootcamp</p>
-              <p class="planet-info__txt planet-info__txt--s">ISDI Coders</p>
+              <p class="planet-info__txt ">ISDI Coders</p>
             </div>
             
           </div>
@@ -126,7 +125,7 @@
       <div class="parallax__layer parallax__layer--slow">
         <div class="planet planet--3 planet--l">
           <div class="planet-info">
-            <img src="svg/journalism.svg"/>
+            <img src="svg/journalism.svg" alt="Planet"/>
             <p class="planet-info__txt">Journalism & Audiovisual Communication</p>
             <p class="planet-info__txt">Rey Juan Carlos University - Madrid</p>
             <p class="planet-info__txt">2009 - 2013</p>
@@ -136,44 +135,46 @@
     
       </div>
       </section>
-      <section class="parallax__group" id="experience">
          <!--STARS---->
-      <div id='stars'></div>
-      <div id='stars2'></div>
-      <div id='stars3'></div>
+         <div id='stars'></div>
+         <div id='stars2'></div>
+         <div id='stars3'></div>
+      <section class="parallax__group" id="experience">
+      
         <h2 class="section-title animate__animated animate__fadeInUp">Experience</h2>
 
         <div class="parallax__layer parallax__layer--fast">
           <div class="planet planet--5 planet--xs" >
             <div class="planet-info">
-              <img src="svg/cba.svg"/>
-              <p class="planet-info__txt planet-info__txt--s">2013-2014</p>
+              <img src="svg/cba.svg" alt="Planet"/>
+              <p class="planet-info__txt ">2013-2014</p>
               <p class="planet-info__txt">Web editor trainee</p>
-              <p class="planet-info__txt planet-info__txt--s">Círculo de Bellas Artes</p>
+              <p class="planet-info__txt ">Círculo de Bellas Artes</p>
             </div>
           </div>
         </div>
 
         <div class="parallax__layer parallax__layer--normal">
-        <div class="planet planet--6 planet--s">
+        <div class="planet planet--6 planet--xs">
 
           <div class="planet-info">
-            <img src="svg/opinno.svg"/>
-            <p class="planet-info__txt planet-info__txt--s">2014</p>
+            <img src="svg/opinno.svg" alt="Planet"/>
+            <p class="planet-info__txt">2014</p>
             <p class="planet-info__txt">Community manager trainee</p>
-            <p class="planet-info__txt planet-info__txt--s">Opinno</p>
+            <p class="planet-info__txt">Opinno</p>
           </div>
           
         </div>
       </div>
       <div class="parallax__layer parallax__layer--slower">
 
-      <div class="planet planet--7 planet--m" style="background-color:violet;border-radius:100%;">
+      <div class="planet planet--7 planet--m">
 
         <div class="planet-info">
-          <p class="planet-info__txt planet-info__txt--s">2015 - today</p>
+          <img src="svg/freelance.svg" alt="Planet"/>
+          <p class="planet-info__txt">2015 - today</p>
           <p class="planet-info__txt">Graphic & web designer</p>
-          <p class="planet-info__txt planet-info__txt--s">Freelance | Macadamia Studio</p>
+          <p class="planet-info__txt">Freelance | Macadamia Studio</p>
         </div>
         
       </div>
