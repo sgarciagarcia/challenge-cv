@@ -244,14 +244,20 @@ width:30px;
 #experience {
     margin-top:200vh
 }
+#portfolio {
+    flex:1;
+    position:static;
+    margin-top:25%;
+}
 #portfolio h2 {
-    left: calc(50vw - 6em);
     margin:0;
     text-align: center;
 }
-#portfolio p {
+#portfolio p.section-title {
     letter-spacing: 8px;
-    text-transform:uppercase;
+    text-transform: uppercase;
+    font-size: 1em;
+    background-color: white;
 }
 .parallax__layer {
     height:100vh;
@@ -343,9 +349,9 @@ width:30px;
 .planet--l .planet-info img {
     width:400px;
 }
-.planet--xl .planet-info img {
-    width:800px;
-    height:800px;
+.planet--xl {
+    width:200vw;
+    height:100vh;
 }
 /*---Posición planetas---*/
 .planet--1 {
@@ -400,11 +406,34 @@ right:10%;
     left: 5%;
     top: 50%;
 }
-.planet--10 {
-    position: absolute;
-    left:calc(50vw - 400px);
-    bottom:-150%;
+.isdi-title {
+    position: relative;
+    top: 325px;
+    width: 450px;
+    left: -25px;
 }
+
+.isdi-halo {
+    width: 866px!important;
+    position: absolute;
+    left: -233px;
+    top: 212px;
+}
+.planet--10 {
+    position: relative;
+    bottom:-250%;
+    background-image:url(../svg/sun.svg);
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+.comet {
+    width: 100px;
+    position: absolute;
+    top: -100px;
+    transition: all 5s ease-in-out;
+    left: -30px;
+}
+
 /*--Info planetas - reveal on scroll discarded--*/
 .planet {
     display:flex;
@@ -412,7 +441,8 @@ right:10%;
     flex-direction:column;
 }
 .planet-info {
-    position:relative;}
+    position:relative;
+    width:400px;}
 .planet-info__txt {
 display:none;}
 
@@ -581,6 +611,15 @@ display:none;}
     -o-animation: rotating 5s linear infinite;
     animation: rotating 5s linear infinite;
   }
+@keyframes {
+    from {transform: translate(0,0);}
+    to{transform: translate(150vw, 100vh);
+}
+
+  .translate {
+      animation: translate 5s linear;
+  }
+  /*-----Media queries--*/
 
   @media screen and (min-width:600px){
     .section-title {
