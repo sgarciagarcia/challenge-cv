@@ -343,7 +343,7 @@ width:30px;
 .planet--l .planet-info img {
     width:400px;
 }
-.planet--xl {
+.planet--xl .planet-info img {
     width:800px;
     height:800px;
 }
@@ -377,8 +377,8 @@ right:10%;
   
 .planet--5 {
     position: absolute;
-    top: 40%;
-    left: 65%;
+    top: 20%;
+    left: 40%;
 }
 .planet--6 {
     position: absolute;
@@ -397,7 +397,8 @@ right:10%;
 }
 .planet--9 {
     position: absolute;
-    left:50%;
+    left: 5%;
+    top: 50%;
 }
 .planet--10 {
     position: absolute;
